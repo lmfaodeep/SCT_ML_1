@@ -66,4 +66,4 @@ with open("output.txt", "w") as f:
     f.write(f"R² Score: {r2:.4f}\n")
     f.write(f"Coefficients: {dict(zip(features, model.coef_))}\n")
     f.write(f"Intercept: {model.intercept_:.2f}\n")
-    f.write(f"Predicted Price for New House: (dollars){predicted_price[0]:.2f}\n")
+    f.write(f"Predicted Price for New House: ${predicted_price[0]:,.2f}\n")
